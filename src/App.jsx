@@ -3,7 +3,7 @@ import './App.css';
 import IdCard from './components/IdCard';
 import Container from './components/Container';
 import Greeting from './components/Greetings';
-const date = new Date(Date.UTC);
+import Random from './components/Random';
 
 function App() {
   return (
@@ -44,6 +44,9 @@ function App() {
           <Greeting lang="en">John</Greeting>
         </div>
       </Container>
+
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
     </div>
   );
 }
